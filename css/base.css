@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    min-height:100vh;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(
+        315deg,
+        #0f2027 0%,
+        #0f2128 3%,
+        #10232b 6%,
+        #12252e 9%,
+        #152a33 12%,
+        #182f38 15%,
+        #1c353f 18%,
+        #203a43 21%,
+        #244048 24%,
+        #274a56 27%,
+        #2a5060 30%,
+        #2b5466 33%,
+        #2a5365 36%,
+        #274e60 39%,
+        #234558 42%,
+        #1e3c50 45%,
+        #1a3250 48%,
+        #172a4a 51%,
+        #1a2549 54%,
+        #221f4d 57%,
+        #2d1b53 60%,
+        #3a1e5d 63%,
+        #462568 66%,
+        #4f2a70 69%,
+        #533075 72%,
+        #4e276c 75%,
+        #441e5e 78%,
+        #39154f 81%,
+        #2e0f3f 84%,
+        #261a35 87%,
+        #1f222b 90%,
+        #1a1f24 93%,
+        #151c21 96%,
+        #0f2027 100%
+    );
+    background-size: 300% 300%;
+    animation: gradientBG 25s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    33% { background-position: 100% 50%; }
+    66% { background-position: 50% 100%; }
+    100% { background-position: 0% 50%; }
+}
+
+:root {
+    --primary-color: #45a049;
+    --shadow: 6px 6px 8px rgba(0, 0, 0, 0.6);
+    --modal-radius: 30px;
+}
+
+/* 页面过渡效果 */
+.page-transition {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page-transition.active {
+    opacity: 1;
+}
