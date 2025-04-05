@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+    <head>
+        <title>贪吃蛇S1赛季</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="贪吃蛇游戏">
+        <meta name="theme-color" content="#00a800">
+        <meta name="renderer" content="webkit">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/components.css">
+        <link rel="stylesheet" href="css/fixed-elements.css">
+        <link rel="stylesheet" href="css/game-choices.css">
+        <link rel="stylesheet" href="css/modals.css">
+        <link rel="stylesheet" href="css/help-modal.css">
+        <link rel="stylesheet" href="css/ranking-modal.css">
+    </head>
+    <body>
+        <!-- 添加过渡容器 -->
+        <div class="page-transition">
+            <button id="ClearData">清除数据</button>
+            <button id="Ranking" aria-label="帮助">
+                <img id="RankingImg" src="Images/Ranking.png" alt="排名图标">
+            </button>
+            <button id="Help" aria-label="帮助">
+                <img id="HelpImg" src="Images/Help.png" alt="帮助图标">
+            </button>
+            
+            <div class="title">
+                <h1 id="title">贪吃蛇-S1赛季</h1>
+            </div>
+            
+            <div class="choice">
+                <div class="choice-container">
+                    <div class="choice1">
+                        <div class="Ctitle1">
+                            <h3 id="Ctitle1">3x3二人博弈</h3>
+                        </div>
+                        <div class="CBegin1">
+                            <img id="CBeginImg1" src="Images/3x3SketchMap.png" alt="模式1示意图">
+                            <button id="CBegin1" aria-label="选择模式1">选择此模式</button>
+                        </div>
+                    </div>
+                        
+                    <div class="choice2">
+                        <div class="Ctitle2">
+                            <h3 id="Ctitle2">5x5二~四人博弈</h3>
+                        </div>
+                        <div class="CBegin2">
+                            <img id="CBeginImg2" src="Images/5x5SketchMap.png" alt="模式2示意图">
+                            <button id="CBegin2" aria-label="选择模式2">选择此模式</button>
+                        </div>
+                    </div>
+                    
+                    <div class="choice3">
+                        <div class="Ctitle3">
+                            <h3 id="Ctitle3">7x7二~五人博弈</h3>
+                        </div>
+                        <div class="CBegin3">
+                            <img id="CBeginImg3" src="Images/7x7SketchMap.png" alt="模式3示意图">
+                            <button id="CBegin3" aria-label="选择模式3">选择此模式</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="help">
+                <div class="help-content">
+                    <h2 id="HTitle">怎么玩？</h2>
+                    <br><br><br><br>
+                </div>
+                <div class="HText">
+                    <div class="help1">
+                        <img src="Images/Help1.png" alt="哎呀！图片不见了">
+                        <p>每个玩家选择一个出生点</p>
+                    </div>
+                    <div class="help2">
+                        <img src="Images/Help2.png" alt="哎呀！图片不见了">
+                        <p>你可以向你的前后左右以及斜侧方移动一步</p>
+                    </div>
+                    <div class="help3">
+                        <img src="Images/Help3.png" alt="哎呀！图片不见了">
+                        <p>当你的箭头的位置无处可去时，你就失败了</p>
+                    </div>
+                    <div class="help4">
+                        <img src="Images/Help4.png" alt="哎呀！图片不见了">
+                        <p>直到场上只剩一个人时，他/她就得了MVP，每得一个MVP增加一分</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Ranking">
+                <div class="ranking-content">
+                    <h2 id="RTitle">排名</h2>
+                    <br><br><br><br>
+                </div>
+                <div class="RText">
+                    <p id="Player1"></p>
+                    <p id="Player2"></p>
+                    <p id="Player3"></p>
+                    <p id="Player4"></p>
+                    <p id="Player5"></p>
+                    <p id="Player6"></p>
+                    <p id="Player7"></p>
+                    <p id="Player8"></p>
+                    <p id="Player9"></p>
+                    <p id="Player10"></p>
+                    <p id="Player11"></p>
+                    <p id="Player12"></p>
+                    <p id="Player13"></p>
+                    <p id="Player14"></p>
+                    <p id="Player15"></p>
+                    <p id="Player16"></p>
+                    <p id="Player17"></p>
+                    <p id="Player18"></p>
+                    <p id="Player19"></p>
+                    <p id="Player20"></p>
+                    <p id="Player21"></p>
+                    <p id="Player22"></p>
+                    <p id="Player23"></p>
+                    <p id="Player24"></p>
+                    <p id="Player25"></p>
+                    <p id="Player26"></p>
+                    <p id="Player27"></p>
+                    <p id="Player28"></p>
+                    <p id="Player29"></p>
+                    <p id="Player30"></p>
+                    <p id="Player31"></p>
+                    <p id="Player32"></p>
+                    <p id="Player33"></p>
+                    <p id="Player34"></p>
+                </div>
+            </div>
+        </div>
+        <script src="Main.js" defer></script>
+    </body>
+</html>
