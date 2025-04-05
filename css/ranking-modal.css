@@ -1,0 +1,74 @@
+/* 排行榜容器 - 横向布局 */
+.Ranking {
+    display: flex;
+    flex-direction: row; /* 横向排列 */
+    flex-wrap: wrap; /* 允许换行 */
+    gap: 15px; /* 项目间距 */
+    padding: 20px;
+    justify-content: center; /* 内容居中 */
+    align-items: flex-start; /* 顶部对齐 */
+    overflow-y: auto; /* 垂直滚动 */
+    max-height: 70vh;
+}
+
+/* 每个排行榜项目 - 横向卡片样式 */
+.ranking-item {
+    display: flex;
+    flex-direction: column; /* 内容垂直排列 */
+    align-items: center;
+    min-width: 120px; /* 最小宽度 */
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* 排名样式 */
+.rank {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* 名字样式 */
+.name {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: center;
+    max-width: 100px;
+    word-break: break-word; /* 长名字自动换行 */
+}
+
+/* 分数样式 */
+.score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4caf50;
+    margin-top: 5px;
+}
+
+/* 前三名特殊样式 */
+#Player1 .rank { 
+    color: #ffd700;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+#Player1 {
+    border: 2px solid #ffd700;
+    transform: scale(1.05);
+}
+
+#Player2 .rank { 
+    color: #c0c0c0;
+    text-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
+}
+#Player2 {
+    border: 2px solid #c0c0c0;
+}
+
+#Player3 .rank { 
+    color: #cd7f32;
+    text-shadow: 0 0 5px rgba(205, 127, 50, 0.5);
+}
+#Player3 {
+    border: 2px solid #cd7f32;
+}

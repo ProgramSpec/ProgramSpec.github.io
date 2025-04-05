@@ -1,0 +1,17 @@
+
+.choice-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.choice1, .choice2, .choice3 {
+    margin: 20px;
+    text-align: center;
+}
+
+.choice1 img, .choice2 img, .choice3 img {
+    width: 15vw;
+    max-width: 200px;
+    border-radius: 5px;
+}

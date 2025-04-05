@@ -1,0 +1,33 @@
+/* 帮助面板特定样式 */
+.help-content {
+    color: white;
+    text-align: center;
+}
+
+.help-content img {
+    max-width: 80%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.HText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.HText > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.HText img {
+    height: 10vh;
+}

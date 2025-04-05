@@ -1,0 +1,40 @@
+/* 模态窗口通用样式 */
+.help, .Ranking {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 50vh;
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: var(--modal-radius);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+    z-index: 100;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    box-shadow: var(--shadow);
+    /*justify-content: center;*/
+    max-width: 6000px;
+}
+
+.help {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.Ranking {
+    height: 80vh;
+    overflow-y: auto;
+    justify-content: ;
+}
+
+.help.active, .Ranking.active {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    pointer-events: auto;
+}

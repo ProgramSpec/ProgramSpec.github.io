@@ -1,0 +1,27 @@
+/* 固定定位元素 */
+#ClearData {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#Help {
+    position: fixed;
+    top: 2vh;
+    right: 1vw;
+}
+
+#Ranking {
+    position: fixed;
+    top: 2vh;
+    right: 5vw;
+}
+
+/* 图标按钮 */
+#Help, #Help img,
+#Ranking, #Ranking img {
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    width: 2vw;
+    max-width: 100px;
+}
